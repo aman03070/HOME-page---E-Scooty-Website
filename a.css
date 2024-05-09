@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87),rgba(255, 255, 255, 0.144)),url(a.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+ nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10;
+   position: fixed;
+   justify-content: space-between;
+   display: flex;
+   overflow-x: visible;
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+    
+}
+
+    .logo{
+        margin-top:1%;
+        width: 240px;
+        cursor: pointer;
+    }
+    .logo:hover{
+        width: 270px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+    nav ul{ font-size: 101.1%;
+        list-style: none;
+        width: 100%;
+        text-align: right;
+        padding-right: 25px;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 10px  ;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        color: #ee1212;
+        text-decoration: none;
+    }
+    nav ul li a::before{
+        content: " ";
+            width: 2rem;
+            height: 0.2rem;
+            background: linear-gradient(90deg,#fff 0%, #fff 100%);
+            border-radius: 0.5rem;
+            position: absolute;
+            bottom: 1rem;
+            opacity: 0;
+            transform: translatex(-1.5rem);
+            transition: all 0.3s ease;
+        }   
+            nav ul li a:hover::before{
+                text-decoration: none;
+            width: 5%;
+            transform: translatex(0);
+            opacity: 1;
+            }
+    .btn{
+        display: flex;
+        align-items: center;
+        padding: 3px 10px;
+        border: 0;
+        outline: 0;
+        border-radius: 8px;
+        background: #ee1212 ;
+        color:#ffffff;
+        margin-right: 9px;
+        font-weight: 100;
+        border: 1px solid #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background: transparent;
+        border: .5px solid gray;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .btn img{
+        width: 30px;
+        color:#ffffff;
+        text-decoration: none;
+        margin-right: 2px;
+    }
+    .btn a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .content{
+        margin-top: 18%;
+        margin-left: 2%;
+        color: #fff;
+        max-width: 620px;
+    }
+    .content h1{
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 65px;
+        margin-bottom: 25px;
+    }
+    .container p{
+        font-size: 100%;
+        margin-top: -16px;
+        font-weight: 400;
+    }
+    .content form{
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .content form input{
+        border: 0;
+        outline: 0;
+        width: 100%;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .content form .btn{
+        font-size: 15px;
+        padding: 10px 30px;
+    }
+    .content form .btn:hover{
+        background:black;
+        color: white;
+
+    }
+    
